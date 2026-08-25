@@ -10,6 +10,9 @@ public class LeaveRequest {
     private LocalDate endDate;
     private String status;
 
+    public LeaveRequest() {
+    }
+
     public LeaveRequest(Long id, Employee employee, LeaveType leaveType, LocalDate startDate, LocalDate endDate, String status) {
         this.id = id;
         this.employee = employee;
@@ -17,9 +20,6 @@ public class LeaveRequest {
         this.startDate = startDate;
         this.endDate = endDate;
         this.status = status;
-    }
-
-    public LeaveRequest() {
     }
 
     public Long getId() {
